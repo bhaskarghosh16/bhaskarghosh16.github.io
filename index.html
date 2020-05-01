@@ -1,0 +1,367 @@
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>This is BGD</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<script src="https://cdn.rawgit.com/kimmobrunfeldt/progressbar.js/1.1.0/dist/progressbar.js"></script>
+
+        <script src="main.js"></script>
+	<body class="is-preload">
+		<script>
+function darkMode() {
+	var element = document.body;
+   element.classList.toggle("light-mode");
+}
+function yearsDiff(d1, d2) {
+    let date1 = new Date(d1);
+    let date2 = new Date(d2);
+    let yearsDiff =  date2.getFullYear() - date1.getFullYear();
+    return yearsDiff;
+}
+function monthsDiff() {
+  let date1 = new Date(2016,8,1);
+  let date2 = new Date();
+  let years = yearsDiff(date1, date2);
+  let months =(years * 12) + (date2.getMonth() - date1.getMonth()) ;
+  return months;
+}
+
+function calculate(){
+var m = monthsDiff();
+var y = Math.floor(m / 12);
+m = m % 12;
+
+var text = y +" Years and "+ m
+   +" months";
+console.log(text);
+var elementExp = document.getElementById("experience");
+elementExp.innerHTML = text;
+}
+
+</script>
+
+<style>
+            .dsalgo .java .design .sb {
+                height: 100px;
+            }
+
+            .dsalgo .java .design .sb > svg {
+                height: 100%;
+                display: block;
+            }
+
+            .ut .rest {
+            	  margin: 20px;
+				  width: 200px;
+				  height: 3px;
+				  position: relative;
+            }
+        </style>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+
+							<!-- Header -->
+								<header id="header">
+									<p><strong>BHASKAR GHOSH DASTIDAR</strong></p>
+									<ul class="icons">
+										<li><button id="dark" onclick="darkMode()" class="secondary small">Theme</button></li>
+										<li><a href="#" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+										<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+										<li><a href="#" class="icon solid fa-download"><span class="label">Download</span></a></li>
+										
+									</ul>
+								</header>
+
+							<!-- Banner -->
+								<section id="banner">
+									<div class="content">
+										<header>
+											<h1>Hello World <br/></h1>
+											
+											
+										</header>
+										<p>I am a Software Engineer with
+										<code id="experience"> <script>calculate();</script>
+											</code>
+											experience, in developing and designing backend systems. </p>
+
+											<p>
+												I have a B.Tech degree in Computer Science and Engineering and I passed out in 2016. 
+												I take a very high interest in new technologies and trying out different frameworks, languages , or tools. 
+											</p>
+
+											<p>
+												I love to read Quora when the test suites are running, and Medium, almost any time I am free. 
+											</p>
+											<p>
+												And I love playing games on the PS4, and eat good food.
+											</p>
+										
+									</div>
+									<span class="image object">
+										<br/><br/>
+										<div class="box">
+											<div class="row">
+											<div class="col-3">
+												<div id="dsalgo" class="dsalgo"></div>
+												<center>Algorithms & Data Structures</center>
+											</div>
+										
+										<div class="col-3">
+												<div id="java" class="java"></div>
+												<center>Java</center>
+										</div>
+										<div class="col-3">
+												<div id="design" class="design"></div>
+												<center>Design (HLD /LLD )</center>
+										</div>
+										<div class="col-3">
+												<div id="sb" class="sb"></div>
+												<center>Springboot</center>
+										</div>
+									</div>
+									<br/>
+									<br/>
+									<div class="row">
+											<div class="col-6">
+												<div id="ut" class="ut"></div>
+												<center>Unit Testing</center>
+											</div>
+											<div class="col-6">
+												<div id="rest" class="rest"></div>
+												<center>REST, API Design</center>
+											</div>
+									</div>
+									<center><a href="#exp" class="button big">Learn More</a></center>
+									</div>
+									<ul class="actions">
+											<li></li>
+										</ul>
+									</span>
+
+								</section>
+
+							<!-- Section -->
+								<section>
+									<header id = "exp" class="major">
+										<h2>Experience</h2>
+
+									</header>
+
+									<div class="features">
+										
+										<article>
+											
+											<span><img src="https://logo.clearbit.com/freshworks.com?size=70"></span>
+											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+											<div class="content">
+												
+												<h3>Freshworks Inc</h3>
+												<p>Senior Software Engineer - Backend for <strong>Freshcaller</strong></p>
+												 
+											</div>
+										</article>
+									
+										<article>
+											<span><img src="https://logo.clearbit.com/oracle.com?size=70"></span>
+											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+											<div class="content">
+												<h3>Oracle India</h3>
+												<p> <strong>Central Components</strong> Team ofOracle HCM Application  </p>
+											</div>
+										</article>
+										<article>
+											<span><img src="https://logo.clearbit.com/tcs.com?size=70"></span>
+											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+											<div class="content">
+												<h3>Tata Consultancy Services</h3>
+												<p>Java and BPM developer service <strong>Tata Steel Netherlands </strong></p>
+											</div>
+										</article>
+										
+									</div>
+								</section>
+								<section>
+									<header class="major">
+										<h2>Get in touch</h2>
+									</header>
+									
+									<ul class="contact">
+										<li class="icon solid fa-envelope"><a href="#">bhaskarghosh16@icloud.com</a></li>
+										<li class="icon solid fa-phone">(+91) 9163407921</li>
+										
+									</ul>
+								</section>
+
+							<!-- Section
+								<section>
+									<header class="major">
+										<h2>Ipsum sed dolor</h2>
+									</header>
+									<div class="posts">
+										<article>
+											<a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
+											<h3>Interdum aenean</h3>
+											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+											<ul class="actions">
+												<li><a href="#" class="button">More</a></li>
+											</ul>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/pic02.jpg" alt="" /></a>
+											<h3>Nulla amet dolore</h3>
+											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+											<ul class="actions">
+												<li><a href="#" class="button">More</a></li>
+											</ul>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/pic03.jpg" alt="" /></a>
+											<h3>Tempus ullamcorper</h3>
+											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+											<ul class="actions">
+												<li><a href="#" class="button">More</a></li>
+											</ul>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/pic04.jpg" alt="" /></a>
+											<h3>Sed etiam facilis</h3>
+											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+											<ul class="actions">
+												<li><a href="#" class="button">More</a></li>
+											</ul>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/pic05.jpg" alt="" /></a>
+											<h3>Feugiat lorem aenean</h3>
+											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+											<ul class="actions">
+												<li><a href="#" class="button">More</a></li>
+											</ul>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/pic06.jpg" alt="" /></a>
+											<h3>Amet varius aliquam</h3>
+											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+											<ul class="actions">
+												<li><a href="#" class="button">More</a></li>
+											</ul>
+										</article>
+									</div>
+								</section>
+
+						</div>
+					</div> -->
+
+				<!-- Sidebar 
+					<div id="sidebar">
+						<div class="inner">
+
+							
+								<section id="search" class="alt">
+									<form method="post" action="#">
+										<input type="text" name="query" id="query" placeholder="Search" />
+									</form>
+								</section>
+
+								<nav id="menu">
+									<header class="major">
+										<h2>Menu</h2>
+									</header>
+									<ul>
+										<li><a href="index.html">Homepage</a></li>
+										<li><a href="generic.html">Generic</a></li>
+										<li><a href="elements.html">Elements</a></li>
+										<li>
+											<span class="opener">Submenu</span>
+											<ul>
+												<li><a href="#">Lorem Dolor</a></li>
+												<li><a href="#">Ipsum Adipiscing</a></li>
+												<li><a href="#">Tempus Magna</a></li>
+												<li><a href="#">Feugiat Veroeros</a></li>
+											</ul>
+										</li>
+										<li><a href="#">Etiam Dolore</a></li>
+										<li><a href="#">Adipiscing</a></li>
+										<li>
+											<span class="opener">Another Submenu</span>
+											<ul>
+												<li><a href="#">Lorem Dolor</a></li>
+												<li><a href="#">Ipsum Adipiscing</a></li>
+												<li><a href="#">Tempus Magna</a></li>
+												<li><a href="#">Feugiat Veroeros</a></li>
+											</ul>
+										</li>
+										<li><a href="#">Maximus Erat</a></li>
+										<li><a href="#">Sapien Mauris</a></li>
+										<li><a href="#">Amet Lacinia</a></li>
+									</ul>
+								</nav>
+
+							
+								<section>
+									<header class="major">
+										<h2>Ante interdum</h2>
+									</header>
+									<div class="mini-posts">
+										<article>
+											<a href="#" class="image"><img src="images/pic07.jpg" alt="" /></a>
+											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/pic08.jpg" alt="" /></a>
+											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/pic09.jpg" alt="" /></a>
+											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
+										</article>
+									</div>
+									<ul class="actions">
+										<li><a href="#" class="button">More</a></li>
+									</ul>
+								</section>
+
+							
+								<section>
+									<header class="major">
+										<h2>Get in touch</h2>
+									</header>
+									<p>Sed varius enim lorem ullamcorper dolore aliquam aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin sed aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+									<ul class="contact">
+										<li class="icon solid fa-envelope"><a href="#">information@untitled.tld</a></li>
+										<li class="icon solid fa-phone">(000) 000-0000</li>
+										<li class="icon solid fa-home">1234 Somewhere Road #8254<br />
+										Nashville, TN 00000-0000</li>
+									</ul>
+								</section>
+
+							
+
+						</div>
+					</div>-->
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
