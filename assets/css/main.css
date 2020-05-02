@@ -73,7 +73,10 @@ html {
   box-sizing: inherit; }
 
 body {
-  background: #1e1e30; }
+  background: #f8f9fa;
+ 
+ /* #1e1e30; */
+}
   body.is-preload *, body.is-preload *:before, body.is-preload *:after, body.is-resizing *, body.is-resizing *:before, body.is-resizing *:after {
     -moz-animation: none !important;
     -webkit-animation: none !important;
@@ -84,15 +87,16 @@ body {
     -ms-transition: none !important;
     transition: none !important; }
 
-.light-mode {
-     background: #f8f9fa;
-     color: #343a40;
+.dark-mode {
+      background: #121212;
+      color: #efefef;
   
 }
 
 /* Type */
 body, input, select, textarea {
-  color: #efefef;
+  
+  color: #343a40;
   font-family: "Open Sans", sans-serif;
   font-size: 13pt;
   font-weight: 400;
