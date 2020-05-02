@@ -77,4 +77,103 @@ var rest = new ProgressBar.Line('#rest', {
 
 rest.animate(0.91);  
 
+
+var java2 = new ProgressBar.Line('#java2', {
+  strokeWidth: 1,
+  easing: 'easeInOut',
+  duration: 1400,
+  color: '#28a745',
+  trailColor: '#D3D3D3',
+  trailWidth: 1,
+  svgStyle: {width: '80%', height: '100%'},
+  step: (state, bar) => {
+    //bar.setText(Math.round(bar.value() * 100) + ' %');
+  }
+});
+
+java2.animate(0.9);
+
+var ruby = new ProgressBar.Line('#ruby', {
+  strokeWidth: 1,
+  easing: 'easeInOut',
+  duration: 1400,
+  color: '#28a745',
+  trailColor: '#D3D3D3',
+  trailWidth: 1,
+  svgStyle: {width: '80%', height: '100%'},
+  step: (state, bar) => {
+    //bar.setText(Math.round(bar.value() * 100) + ' %');
+  }
+});
+
+ruby.animate(0.7);
+
+
+
+var js = new ProgressBar.Line('#js', {
+  strokeWidth: 1,
+  easing: 'easeInOut',
+  duration: 1400,
+  color: '#28a745',
+  trailColor: '#D3D3D3',
+  trailWidth: 1,
+  svgStyle: {width: '80%', height: '100%'},
+  step: (state, bar) => {
+    //bar.setText(Math.round(bar.value() * 100) + ' %');
+  }
+});
+
+js.animate(0.7);
+
+
+
+
+var ror = new ProgressBar.Line('#ror', {
+  strokeWidth: 1,
+  easing: 'easeInOut',
+  duration: 1400,
+  color: '#4c75f299',
+  trailColor: '#D3D3D3',
+  trailWidth: 1,
+  svgStyle: {width: '80%', height: '100%'},
+  step: (state, bar) => {
+    //bar.setText(Math.round(bar.value() * 100) + ' %');
+  }
+});
+
+ror.animate(0.5);
+
+
+
+var sql = new ProgressBar.Line('#sql', {
+  strokeWidth: 1,
+  easing: 'easeInOut',
+  duration: 1400,
+  color: '#4c75f299',
+  trailColor: '#D3D3D3',
+  trailWidth: 1,
+  svgStyle: {width: '80%', height: '100%'},
+  step: (state, bar) => {
+    //bar.setText(Math.round(bar.value() * 100) + ' %');
+  }
+});
+
+sql.animate(0.7);
+
+
+var sb2 = new ProgressBar.Line('#sb2', {
+  strokeWidth: 1,
+  easing: 'easeInOut',
+  duration: 1400,
+  color: '#4c75f299',
+  trailColor: '#D3D3D3',
+  trailWidth: 1,
+  svgStyle: {width: '80%', height: '100%'},
+  step: (state, bar) => {
+    //bar.setText(Math.round(bar.value() * 100) + ' %');
+  }
+});
+
+sb2.animate(0.8);
+
     };
