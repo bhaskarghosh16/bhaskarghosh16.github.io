@@ -1,699 +1,841 @@
 <!DOCTYPE HTML>
-<!--
-	Editorial by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
+
 <html>
-	<head>
-		<title>This is BGD</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<script src="https://cdn.rawgit.com/kimmobrunfeldt/progressbar.js/1.1.0/dist/progressbar.js"></script>
+<head>
+    <title>This is BGD</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+    <link rel="stylesheet" href="assets/css/main.css"/>
+</head>
+<script src="https://cdn.rawgit.com/kimmobrunfeldt/progressbar.js/1.1.0/dist/progressbar.js"></script>
 
-        <script src="main.js"></script>
-	<body class="is-preload">
-		<script>
-function darkMode() {
-	var element = document.body;
-   element.classList.toggle("dark-mode");
-}
-function yearsDiff(d1, d2) {
-    let date1 = new Date(d1);
-    let date2 = new Date(d2);
-    let yearsDiff =  date2.getFullYear() - date1.getFullYear();
-    return yearsDiff;
-}
-function monthsDiff() {
-  let date1 = new Date(2016,8,1);
-  let date2 = new Date();
-  let years = yearsDiff(date1, date2);
-  let months =(years * 12) + (date2.getMonth() - date1.getMonth()) ;
-  return months;
-}
+<script src="main.js"></script>
+<body class="is-preload">
+<script>
+    function darkMode() {
+        var element = document.body;
+       element.classList.toggle("dark-mode");
+    }
+    function yearsDiff(d1, d2) {
+        let date1 = new Date(d1);
+        let date2 = new Date(d2);
+        let yearsDiff =  date2.getFullYear() - date1.getFullYear();
+        return yearsDiff;
+    }
+    function monthsDiff() {
+      let date1 = new Date(2016,8,1);
+      let date2 = new Date();
+      let years = yearsDiff(date1, date2);
+      let months =(years * 12) + (date2.getMonth() - date1.getMonth()) ;
+      return months;
+    }
 
-function calculate(){
-var m = monthsDiff();
-var y = Math.floor(m / 12);
-m = m % 12;
+    function calculate(){
+    var m = monthsDiff();
+    var y = Math.floor(m / 12);
+    m = m % 12;
 
-var text = y +" Years and "+ m
-   +" months";
-console.log(text);
-var elementExp = document.getElementById("experience");
-elementExp.innerHTML = text;
-}
+    var text = y +" Years and "+ m
+       +" months";
+    var elementExp = document.getElementById("experience");
+    elementExp.innerHTML = text;
+    }
 
 </script>
 
 <style>
-            .dsalgo .java .design  {
-                height: 100px;
-            }
+    .dsalgo .java .design  {
+        height: 100px;
+    }
 
-            
 
-            .dsalgo .java .design .sb  > svg {
-                height: 100%;
-                display: block;
-            }
 
-            .ut .rest .rest2  {
-            	  margin: 20px;
-				  width: 200px;
-				  height: 3px;
-				  position: relative;
-            }
+    .dsalgo .java .design .sb  > svg {
+        height: 100%;
+        display: block;
+    }
 
-            .java2 .ruby .js .ror .sb2 .sql {
-  				width: 100px;
-  				height: 8px;
-			}
-        </style>
+    .ut .rest .rest2  {
+          margin: 20px;
+          width: 200px;
+          height: 3px;
+          position: relative;
+    }
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+    .java2 .ruby .js .ror .sb2 .sql {
+          width: 100px;
+          height: 8px;
+    }
+</style>
 
-				<!-- Main -->
-					<div id="main">
-						<div class="inner">
+<!-- Wrapper -->
+<div id="wrapper">
 
-							<!-- Header -->
-								<header id="header">
-									<p><strong>BHASKAR GHOSH DASTIDAR</strong></p>
-									<ul class="icons">
-										<li><button id="dark" onclick="darkMode()" class="secondary small">Theme</button></li>
-										<li><a href="https://www.linkedin.com/in/bgd16/" target="_blank" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-										<li><a href="https://github.com/bhaskarghosh16" class="icon brands fa-github" target="_blank"><span class="label">GitHub</span></a></li>
-										<li><a href="resume.pdf" download class="icon solid fa-download"><span class="label">Download</span></a></li>
-										
-									</ul>
-								</header>
+    <!-- Main -->
+    <div id="main">
+        <div class="inner">
 
-							<!-- Banner -->
-								<section id="banner">
-									<div class="content">
-										<header>
-											<h1>Hello World <br/></h1>
-											
-											
-										</header>
-										<p>I am a Software Engineer with
-										<code id="experience"> <script>calculate();</script>
-											</code>
-											experience, in developing and designing backend systems. </p>
+            <!-- Header -->
+            <header id="header">
+                <h2>BHASKAR GHOSH DASTIDAR</h2>
+                <ul class="icons">
+                    <li>
+                        <button id="dark" onclick="darkMode()" class="secondary small">Theme</button>
+                    </li>
+                    <li><a href="https://www.linkedin.com/in/bgd16/" target="_blank" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                    <li><a href="https://github.com/bhaskarghosh16" class="icon brands fa-github" target="_blank"><span class="label">GitHub</span></a></li>
+                    <li><a href="Bhaskar%20Resume%202024.pdf" download class="icon solid fa-download"><span class="label">Download</span></a></li>
 
-											<p>
-												I have a B.Tech degree in Computer Science and Engineering and I passed out in 2016. 
-												I take a very high interest in new technologies and trying out different frameworks, languages , or tools. 
-											</p>
+                </ul>
+            </header>
 
-											<p>
-												I love to read Quora when the test suites are running, and Medium, almost any time I am free. 
-											</p>
-											<p>
-												And I love playing games on the PS4, and eat good food.
-											</p>
-										
-									</div>
-									<span class="image object">
+
+            <section id="banner">
+                <div class="content">
+                    <header>
+                        <h3>Hi.<br/></h3>
+
+
+                    </header>
+                    <p>I am a Software Engineer with <b>
+                        <span id="experience">
+                            <b><script>calculate();</script></b>
+                        </span>
+                    </b> experience, in developing high-quality software across diverse industries.
+                    </p>
+                    <p>
+                        I am proficient in programming languages such as Java and good at problem-solving, with a strong track record of delivering scalable and robust applications.
+                    </p>
+                    <p>
+                        Currently, I am working as a Lead Engineer in Freshworks focussing on Freshdesk and Freshcaller Product group.
+                    </p>
+
+                    <p> I can be reached at <strong>bhaskarghosh16@icloud.com </strong> / <strong> dastidar.bhaskar@gmail.com</strong> and here's my <a href="https://www.linkedin.com/in/bgd16/" target="_blank" class="icon brands fa-linkedin"> </a> profile.</p>
+
+                </div>
+                <span class="image object">
 										<br/><br/>
 										<div class="box">
+
 											<center><h3>Skills Overview</h3></center>
-											<div class="row">
-											<div class="col-3">
-												<div id="dsalgo" class="dsalgo"></div>
-												<center>Algorithms & Data Structures</center>
-											</div>
-										
-										<div class="col-3">
-												<div id="java" class="java"></div>
-												<center>Java</center>
-										</div>
-										<div class="col-3">
-												<div id="design" class="design"></div>
-												<center>Design (HLD /LLD )</center>
-										</div>
-										<div class="col-3">
-												<div id="sb" class="sb"></div>
-												<center>Springboot</center>
-										</div>
-									</div>
-									<br/>
-									<br/>
-									<div class="row">
-											<div class="col-6">
-												<div id="ut" class="ut"></div>
-												<center>Unit Testing</center>
-											</div>
-											<div class="col-6">
-												<div id="rest" class="rest"></div>
-												<center>REST, API Design</center>
-											</div>
-									</div>
-									<center><a href="#skills" class="button big">Learn More</a></center>
-									</div>
-									<ul class="actions">
-											<li></li>
-										</ul>
-									</span>
-
-								</section>
-
-							<!-- Section -->
-								<section>
-									<header id = "exp" class="major">
-										<h2>Experience</h2>
-
-									</header>
-
-									<div class="features">
-										
-										<article>
-											
-											<span><img src="https://logo.clearbit.com/freshworks.com?size=70"></span>
-											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-											<div class="content">
-												
-												<h3>Freshworks Inc</h3>
-												<p>Senior Software Engineer - Backend for <strong>Freshcaller</strong></p>
-												 
-											</div>
-										</article>
-									
-										<article>
-											<span><img src="https://logo.clearbit.com/oracle.com?size=70"></span>
-											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-											<div class="content">
-												<h3>Oracle India</h3>
-												<p> <strong>Central Components</strong> Team of Oracle <strong>HCM</strong> Application  </p>
-											</div>
-										</article>
-										<article>
-											<span><img src="https://logo.clearbit.com/tcs.com?size=70"></span>
-											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-											<div class="content">
-												<h3>Tata Consultancy Services</h3>
-												<p>Java and BPM developer for  <strong>Tata Steel Netherlands</strong></p>
-											</div>
-										</article>
-										
-									</div>
-								</section>
-
-								<section>
-									<header id = "skills" class="major">
-										<h2>Technical Skill Set</h2>
-									</header>
-										<div class="row">
-											
-											<div class="col-6">
-												<div class="box">
-													<h4>Programming Languages</h4>
-													<div class="row">
-														<div class="col-3"><strong>Java</strong></div>
-														<div class="col-9"><div id="java2" class="java2"></div></div>
-													</div>
-													<div class="row">
-														<div class="col-3"><strong>Ruby</strong></div>
-														<div class="col-9"><div id="ruby" class="ruby"></div></div>
-													</div>
-													<div class="row">
-														<div class="col-3"><strong>Javascript</strong></div>
-														<div class="col-9"><div id="js" class="js"></div></div>
-													</div>
-											</div>
-
-											</div>
-											<div class="col-6">
-												<div class="box">
-													<h4>Backend Technologies</h4>
-													<div class="row">
-														<div class="col-3"><strong>Springboot</strong></div>
-														<div class="col-9"><div id="sb2" class="sb2"></div></div>
-													</div>
-													<div class="row">
-														<div class="col-3"><strong>Mysql</strong></div>
-														<div class="col-9"><div id="sql" class="sql"></div></div>
-													</div>
-													<div class="row">
-														<div class="col-3"><strong>Ruby on Rails</strong></div>
-														<div class="col-9"><div id="ror" class="ror"></div></div>
-													</div>
-													
-												</div>
-
-											</div>
-
-										</div>
-									<br/>
-									<div class="row">
-											
-											<div class="col-6">
-												<div class="box">
-													<h4>DevTools and Misc</h4>
-													<div class="row">
-														<div class="col-4"><center><strong>AWS</strong></center></div>
-														<div class="col-4"><center><strong>Git</strong></center></div>
-														<div class="col-4"><center><strong>Docker</strong></center></div>
-													</div>
-													<br/>
-													<div class="row">
-														<div class="col-4"><center><strong>Redis</strong></center></div>
-														<div class="col-4"><center><strong>REST</strong></center></div>
-														<div class="col-4"><center><strong>UNIX Commands, bash scripting</strong></center></div>
-													</div>
-													<div class="row">
-														<div class="col-4"><center><strong>Agile</strong></center></div>
-														
-													</div>
-													
-											</div>
-
-											</div>
-											<div class="col-6">
-												
-
-										</div>
-								</section>
-								
-								<section>
-									<header class="major">
-										<h2>Experiences & Projects</h2>
-									</header>
-
-
-									<div class="row">
-										<div class="col-3">
-
-
-									<article>
-											
-											<span><img src="https://logo.clearbit.com/freshworks.com?size=70"></span>
-											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-											<div class="content">
-												
-												<h3>Freshworks Inc</h3>
-												<p><em><strong>Senior Software Engineer</strong></em><br/>
-												2019 December - Present
-												</p>
-												 
-											</div>
-										</article>
-										</div>
-										<div class="col-4">
-											<h4><u>About the Product / Team</u></h4>
-											<p>Product name : <strong><a href="https://www.freshworks.com/freshcaller-cloud-pbx/">Freshcaller</a></strong>
-												<br/>
-											Team name : <strong>Freshcaller Backend Team</strong>
-												<br/>
-											Tech Stack / Technologies : <strong>
-												Java , Springboot ,Ruby, Mysql, Ruby on Rails, Javascript, REST
-												
-											</strong>
-											
-
-
-										</p>
-
-										</div>
-										<div class="col-5">
-											<h4><u>Roles & Responsibilities</u></h4>
-											<p><dl><dd><ul>
-												<li>Working as a Java, Ruby Backend engineer</li>
-												<li>Involved in continuos shipping of new following a fast and rapid development cycle </li>
-												<li>Designing(low level, high level) and scaling new features, designing APIs, integration with third party softwares/APIs</li>
-												<li>Owning of the complete lifecycle from design - develop - deploy using AWS stack</li>
-												
-											</ul>
-										</dd></dl>
-
-										</p>
-
-										</div>
-									</div>
-									<br/><br/>
-									<div class="row">
-										<div class="col-3">
-
-
-									<article>
-											
-											<span><img src="https://logo.clearbit.com/oracle.com?size=70"></span>
-											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-											<div class="content">
-												
-												<h3>Oracle India</h3>
-												<p><em><strong>Applications Developer II</strong></em>
-												<br/>
-												2018 December - 2019 December (1 year 1 month)</p>
-												 
-											</div>
-										</article>
-										</div>
-										<div class="col-4">
-											<h4><u>About the Product / Team</u></h4>
-											<p>Product name : <strong><a href="https://www.oracle.com/in/applications/human-capital-management/">Oracle HCM</a></strong>
-												<br/>
-											Team name : <strong>Central Components Team</strong>
-												<br/>
-											Tech Stack / Technologies : <strong>
-												Java , Oracle ADF, Oracle DB, Linux OS, Javascript
-												
-											</strong>
-											
-
-
-										</p>
-
-										</div>
-										<div class="col-5">
-											<h4><u>Roles & Responsibilities</u></h4>
-											<p><dl><dd><ul>
-												<li>Worked as a Java Backend engineer in Oracle’s HCM Line of Products. </li>
-												<li>Central Components Team is in charge of developing core cross cutting features, which can be used across the entire product by different teams </li>
-												<li>Was actively involved in developing/ bug fixing of some features like  Search, Scoreboard component etc.</li>
-												<li>Was involved in debugging critical bugs and issues for the released versions of the
-												product in stringent timelines. </li>
-												<li>Was involved in interacting with support , for customer critical issues and bugs</li>
-											</ul>
-										</dd></dl>
-
-										</p>
-
-										</div>
-									</div>
-
-									<br/><br/>
-									<div class="row">
-										<div class="col-3">
-
-
-									<article>
-											
-											
-											<span><img src="https://logo.clearbit.com/tcs.com?size=70"></span>
-											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-											<div class="content">
-												
-												<h3>Tata Consultancy Services</h3>
-												<p><em><strong>Systems Engineer</strong></em>
-												<br/>
-												2016 July - 2018 November (2 years 5 months)</p>
-												 
-											</div>
-										</article>
-										</div>
-										<div class="col-4">
-											<h4><u>About the Product / Team</u></h4>
-											<p>Client name : <strong>Tata Steel Netherlands</strong>
-												<br/>
-											<br/>
-											Tech Stack / Technologies : <strong>
-												Java , BPM (OpenText BPM), Oracle DB, SOA, Webservices
-												
-											</strong>
-											
-
-
-										</p>
-
-										</div>
-										<div class="col-5">
-											<h4><u>Roles & Responsibilities</u></h4>
-											<p><dl><dd><ul>
-												<li>Worked as a Core Java and BPM Developer using OpenText BPM (Cordys)</li>
-												<li>Was partly engaged in a client facing role in the Netherlands, where I worked closely with architects to design and develop workflows</li>
-												<li>Developed process models, workflows, master data solutions for
-												parts of the organisation in an Agile Scrum Team</li>
-												
-												<li>Wrote complex business logic, common utility services
-												in Java</li>
-												<li>Developed process models for the ESB layer, integrating different
-												systems such as SAP, JDI, Legacy etc.</li>
-
-											</ul>
-										</dd></dl>
-
-										</p>
-
-										</div>
-									</div>
-
-									<br/><br/>
-									<div class="row">
-										<div class="col-3">
-
-
-									<article>
-											
-											<span></span>
-											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-											<div class="content">
-												
-												<h3>Jadavpur University - Internship</h3>
-												<p><em><strong>Internship curriculam</strong></em><br/>
-												2 months</p>
-												 
-											</div>
-										</article>
-										</div>
-										<div class="col-4">
-											<h4><u>About the Product / Team</u></h4>
-											<p>Organisation  : <strong>Jadavpur University, Kolkata, India</strong>
-												<br/>
-											<br/>
-											Tech Stack / Technologies : <strong>
-												Java , GIS data, HTML, Javascript,  SQL
-												
-											</strong>
-											
-
-
-										</p>
-
-										</div>
-										<div class="col-5">
-											<h4><u>Roles & Responsibilities</u></h4>
-											<p><dl><dd><ul>
-												<li>Development of a GIS based Design Making Support System for
-												Municipal Waste Disposal</li>
-												<li>Implemented an efficient algorithm to determine
-												optimal path for waste disposal</li>
-												
-
-											</ul>
-										</dd></dl>
-
-										</p>
-
-										</div>
-									</div>
-								</section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-								<section>
-									<center>
-									<header class="major">
-										<h2>Get in touch</h2>
-									</header>
-									</center>
-									<div class = "row">
-									<div class="col-4">
-									</div>
-									<div class="col-4">
-										<center>
-									<ul class="contact">
-										<li class="icon solid fa-envelope">bhaskarghosh16@icloud.com / dastidar.bhaskar@gmail.com</li>
-										
-										<li class="icon solid fa-phone">(+91) 9163407921</li>
-										
-									</ul>
-								</center>
-								</div>
-								<div class="col-4">
-									</div>
-								</div>
-								</section>
-
-							<!-- Section
-								<section>
-									<header class="major">
-										<h2>Ipsum sed dolor</h2>
-									</header>
-									<div class="posts">
-										<article>
-											<a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
-											<h3>Interdum aenean</h3>
-											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-											<ul class="actions">
-												<li><a href="#" class="button">More</a></li>
-											</ul>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/pic02.jpg" alt="" /></a>
-											<h3>Nulla amet dolore</h3>
-											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-											<ul class="actions">
-												<li><a href="#" class="button">More</a></li>
-											</ul>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/pic03.jpg" alt="" /></a>
-											<h3>Tempus ullamcorper</h3>
-											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-											<ul class="actions">
-												<li><a href="#" class="button">More</a></li>
-											</ul>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/pic04.jpg" alt="" /></a>
-											<h3>Sed etiam facilis</h3>
-											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-											<ul class="actions">
-												<li><a href="#" class="button">More</a></li>
-											</ul>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/pic05.jpg" alt="" /></a>
-											<h3>Feugiat lorem aenean</h3>
-											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-											<ul class="actions">
-												<li><a href="#" class="button">More</a></li>
-											</ul>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/pic06.jpg" alt="" /></a>
-											<h3>Amet varius aliquam</h3>
-											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-											<ul class="actions">
-												<li><a href="#" class="button">More</a></li>
-											</ul>
-										</article>
-									</div>
-								</section>
-
-						</div>
-					</div> -->
-
-				<!-- Sidebar 
-					<div id="sidebar">
-						<div class="inner">
-
-							
-								<section id="search" class="alt">
-									<form method="post" action="#">
-										<input type="text" name="query" id="query" placeholder="Search" />
-									</form>
-								</section>
-
-								<nav id="menu">
-									<header class="major">
-										<h2>Menu</h2>
-									</header>
-									<ul>
-										<li><a href="index.html">Homepage</a></li>
-										<li><a href="generic.html">Generic</a></li>
-										<li><a href="elements.html">Elements</a></li>
-										<li>
-											<span class="opener">Submenu</span>
-											<ul>
-												<li><a href="#">Lorem Dolor</a></li>
-												<li><a href="#">Ipsum Adipiscing</a></li>
-												<li><a href="#">Tempus Magna</a></li>
-												<li><a href="#">Feugiat Veroeros</a></li>
-											</ul>
-										</li>
-										<li><a href="#">Etiam Dolore</a></li>
-										<li><a href="#">Adipiscing</a></li>
-										<li>
-											<span class="opener">Another Submenu</span>
-											<ul>
-												<li><a href="#">Lorem Dolor</a></li>
-												<li><a href="#">Ipsum Adipiscing</a></li>
-												<li><a href="#">Tempus Magna</a></li>
-												<li><a href="#">Feugiat Veroeros</a></li>
-											</ul>
-										</li>
-										<li><a href="#">Maximus Erat</a></li>
-										<li><a href="#">Sapien Mauris</a></li>
-										<li><a href="#">Amet Lacinia</a></li>
-									</ul>
-								</nav>
-
-							
-								<section>
-									<header class="major">
-										<h2>Ante interdum</h2>
-									</header>
-									<div class="mini-posts">
-										<article>
-											<a href="#" class="image"><img src="images/pic07.jpg" alt="" /></a>
-											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/pic08.jpg" alt="" /></a>
-											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/pic09.jpg" alt="" /></a>
-											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
-										</article>
-									</div>
-									<ul class="actions">
-										<li><a href="#" class="button">More</a></li>
-									</ul>
-								</section>
-
-							
-								<section>
-									<header class="major">
-										<h2>Get in touch</h2>
-									</header>
-									<p>Sed varius enim lorem ullamcorper dolore aliquam aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin sed aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-									<ul class="contact">
-										<li class="icon solid fa-envelope"><a href="#">information@untitled.tld</a></li>
-										<li class="icon solid fa-phone">(000) 000-0000</li>
-										<li class="icon solid fa-home">1234 Somewhere Road #8254<br />
-										Nashville, TN 00000-0000</li>
-									</ul>
-								</section>
-
-							
-
-						</div>
-					</div>-->
-
-			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
+                                            <div class = "row">
+                                            <div class = "col-6">
+                                                <ul>
+    <li><strong>Programming</strong></li>
+    <li><strong>Java</strong></li>
+    <li><strong>Kafka</strong></li>
+    <li><strong>Springboot</strong></li>
+                                                </ul>
+                                            </div>
+                                            <div class = "col-6">
+                                                <ul>
+                                                        <li><strong>MySQL</strong></li>
+    <li><strong>REST, API Design</strong></li>
+                                                </ul>
+                                            </div>
+                                                <div>
+
+
+
+
+            </section>
+
+            <!--            &lt;!&ndash; Section &ndash;&gt;-->
+            <!--            <section>-->
+            <!--                <header id="exp" class="major">-->
+            <!--                    <h2>Experience</h2>-->
+
+            <!--                </header>-->
+
+            <!--                <div class="features">-->
+
+            <!--                    <article>-->
+
+            <!--                        <span><img src="https://logo.clearbit.com/freshworks.com?size=70"></span>-->
+            <!--                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-->
+            <!--                        <div class="content">-->
+
+            <!--                            <h3>Freshworks Inc</h3>-->
+            <!--                            <p>Senior Software Engineer - Backend for <strong>Freshcaller</strong></p>-->
+
+            <!--                        </div>-->
+            <!--                    </article>-->
+
+            <!--                    <article>-->
+            <!--                        <span><img src="https://logo.clearbit.com/oracle.com?size=70"></span>-->
+            <!--                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-->
+            <!--                        <div class="content">-->
+            <!--                            <h3>Oracle India</h3>-->
+            <!--                            <p><strong>Central Components</strong> Team of Oracle <strong>HCM</strong> Application </p>-->
+            <!--                        </div>-->
+            <!--                    </article>-->
+            <!--                    <article>-->
+            <!--                        <span><img src="https://logo.clearbit.com/tcs.com?size=70"></span>-->
+            <!--                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-->
+            <!--                        <div class="content">-->
+            <!--                            <h3>Tata Consultancy Services</h3>-->
+            <!--                            <p>Java and BPM developer for <strong>Tata Steel Netherlands</strong></p>-->
+            <!--                        </div>-->
+            <!--                    </article>-->
+
+            <!--                </div>-->
+            <!--            </section>-->
+
+            <section>
+                <header class="major">
+                    <h2>Work</h2>
+                </header>
+
+                <div class="row">
+                    <div class="col-3">
+
+
+                        <article>
+
+                            <span><img src="https://logo.clearbit.com/freshworks.com?size=70"></span>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <div class="content">
+
+                                <h3>Freshworks Inc</h3>
+                                <p><em><strong>Lead Software Engineer</strong></em><br/>
+                                    2021 September - Present
+                                </p>
+
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-4">
+                        <h4><u>About the Product / Team</u></h4>
+                        <p>Product: <strong><a href="https://www.freshworks.com/freshcaller-cloud-pbx/">Freshcaller </a></strong> & <strong><a href="https://www.freshworks.com/freshcaller-cloud-pbx/">Freshdesk </a></strong>
+                            <br/>
+                            Team name : <strong>Freshcaller and Freshdesk Engineering</strong>
+                            <br/>
+                            Tech Stack / Technologies : <strong>
+                                Java , Springboot ,Ruby, Mysql, Ruby on Rails, Javascript, REST
+
+                            </strong>
+
+
+                        </p>
+
+                    </div>
+                    <div class="col-5">
+                        <h4><u>Roles & Responsibilities</u></h4>
+                        <p>
+                        <dl>
+                            <dd>
+                                <ul>
+                                    <li>Led the design, development and delivery of important and complex features</li>
+                                    <li>Planned release and rollout of features to customers globally</li>
+                                    <li>Mentored Engineers in the team</li>
+                                </ul>
+                            </dd>
+                        </dl>
+
+                        </p>
+                        <h4><u>Achievements</u></h4>
+                        <p>
+                        <dl>
+                            <dd>
+                                <ul>
+                                    <li> Successfully revamped the entire <strong>Phone call Allocation algorithm for freshcaller</strong> which enhanced the allocation and call answer rate by 50%</li>
+                                    <li>Worked on maintaining product uptime and <strong>reduced API latencies by more than 65% for some APIs. </strong></li>
+                                    <li>Worked on a novel way of <strong>measuring system latencies of specific user interactions such as "time taken to answer a phone call" </strong> etc.</li>
+                                    <li>Introduced a new calling capability called <strong>Parallel Calling which allowed agents to call multiple participants parallel and concurrently</strong>. This was one of the most adopted features of freshcaller.</li>
+                                    <li>Integrated AI capabilities into the product.</li>
+                                </ul>
+                            </dd>
+                        </dl>
+
+                    </div>
+                </div>
+                <br/><br/>
+                <div class="row">
+                    <div class="col-3">
+
+
+                        <article>
+
+                            <span><img src="https://logo.clearbit.com/freshworks.com?size=70"></span>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <div class="content">
+
+                                <h3>Freshworks Inc</h3>
+                                <p><em><strong>Senior Software Engineer</strong></em><br/>
+                                    2019 December - 2021 September
+                                </p>
+
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-4">
+                        <h4><u>About the Product / Team</u></h4>
+                        <p>Product name : <strong><a href="https://www.freshworks.com/freshcaller-cloud-pbx/">Freshcaller</a></strong>
+                            <br/>
+                            Team name : <strong>Freshcaller Backend Team</strong>
+                            <br/>
+                            Tech Stack / Technologies : <strong>
+                                Java , Springboot ,Ruby, Mysql, Ruby on Rails, Javascript, REST
+
+                            </strong>
+
+
+                        </p>
+
+                    </div>
+                    <div class="col-5">
+                        <h4><u>Roles & Responsibilities</u></h4>
+                        <p>
+                        <dl>
+                            <dd>
+                                <ul>
+                                    <li>Working as a Java, Ruby Backend engineer</li>
+                                    <li>Involved in continuos shipping of new following a fast and rapid development cycle</li>
+                                    <li>Designing(low level, high level) and scaling new features, designing APIs, integration with third party softwares/APIs</li>
+                                    <li>Owning of the complete lifecycle from design - develop - deploy using AWS stack</li>
+
+                                </ul>
+                            </dd>
+                        </dl>
+
+                        <h4><u>Achievements</u></h4>
+                        <p>
+                        <dl>
+                            <dd>
+                                <ul>
+                                    <li>Successfully <strong>developed and delivered the Call Transcriptions feature for Freshcaller.</strong></li>
+                                    <li>Worked on a feature that <strong>enables collecting payments over a phone call.</strong></li>
+                                    <li>Participated in designing and <strong> developing core features such as Auto Answer </strong>, and managed inter-product integrations.</li>
+                                    <li>Worked on <strong>account billing and autorecharge features of the product.</strong></li>
+                                    <li>Ensured high uptime of the product, and handled on-calls and customer escalations.</li>
+                                    <li>Wrote <strong>scalable Kafka consumers in Java </strong> for event-driven functionalities.</li>
+                                </ul>
+
+                            </dd>
+                        </dl>
+
+                    </div>
+                </div>
+                <br/><br/>
+                <div class="row">
+                    <div class="col-3">
+
+
+                        <article>
+
+                            <span><img src="https://logo.clearbit.com/oracle.com?size=70"></span>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <div class="content">
+
+                                <h3>Oracle India</h3>
+                                <p><em><strong>Applications Developer II</strong></em>
+                                    <br/>
+                                    2018 December - 2019 December (1 year 1 month)</p>
+
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-4">
+                        <h4><u>About the Product / Team</u></h4>
+                        <p>Product name : <strong><a href="https://www.oracle.com/in/applications/human-capital-management/">Oracle HCM</a></strong>
+                            <br/>
+                            Team name : <strong>Central Components Team</strong>
+                            <br/>
+                            Tech Stack / Technologies : <strong>
+                                Java , Oracle ADF, Oracle DB, Linux OS, Javascript
+
+                            </strong>
+
+
+                        </p>
+
+                    </div>
+                    <div class="col-5">
+                        <h4><u>Roles & Responsibilities</u></h4>
+                        <p>
+                        <dl>
+                            <dd>
+                                <ul>
+                                    <li>Worked as a Java Backend engineer in Oracle’s HCM Line of Products.</li>
+                                    <li><strong>Central Components Team is in charge of developing core cross cutting features</strong>, which can be used across the entire product by different teams</li>
+                                    <li>Was actively involved in <strong>developing/ bug fixing of some features like Search, Scoreboard component </strong>etc.</li>
+                                    <li>Was involved in debugging critical bugs and issues for the released versions of the
+                                        product in stringent timelines.
+                                    </li>
+                                    <li>Was involved in <strong>interacting with support , for customer critical issues and bugs. </strong></li>
+                                </ul>
+                            </dd>
+                        </dl>
+
+                        </p>
+
+                    </div>
+                </div>
+
+                <br/><br/>
+                <div class="row">
+                    <div class="col-3">
+
+
+                        <article>
+
+
+                            <span><img src="https://logo.clearbit.com/tcs.com?size=70"></span>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <div class="content">
+
+                                <h3>Tata Consultancy Services</h3>
+                                <p><em><strong>Systems Engineer</strong></em>
+                                    <br/>
+                                    2016 July - 2018 November (2 years 5 months)</p>
+
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-4">
+                        <h4><u>About the Product / Team</u></h4>
+                        <p>Client name : <strong>Tata Steel Netherlands</strong>
+                            <br/>
+                            <br/>
+                            Tech Stack / Technologies : <strong>
+                                Java , BPM (OpenText BPM), Oracle DB, SOA, Webservices
+
+                            </strong>
+
+
+                        </p>
+
+                    </div>
+                    <div class="col-5">
+                        <h4><u>Roles & Responsibilities</u></h4>
+                        <p>
+                        <dl>
+                            <dd>
+                                <ul>
+                                    <li>Worked as a Core Java and BPM Developer using OpenText BPM (Cordys)</li>
+                                    <li>Was partly engaged in a client facing role in the Netherlands, where I worked closely with architects to design and develop workflows</li>
+                                    <li>Developed process models, workflows, master data solutions for
+                                        parts of the organisation in an Agile Scrum Team
+                                    </li>
+
+                                    <li>Wrote complex business logic, common utility services
+                                        in Java
+                                    </li>
+                                    <li>Developed process models for the ESB layer, integrating different
+                                        systems such as SAP, JDI, Legacy etc.
+                                    </li>
+
+                                </ul>
+                            </dd>
+                        </dl>
+
+                        </p>
+
+                    </div>
+                </div>
+
+                <br/><br/>
+                <div class="row">
+                    <div class="col-3">
+
+
+                        <article>
+
+                            <span></span>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <div class="content">
+
+                                <h3>Jadavpur University - Internship</h3>
+                                <p><em><strong>Internship curriculam</strong></em><br/>
+                                    2 months</p>
+
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-4">
+                        <h4><u>About the Product / Team</u></h4>
+                        <p>Organisation : <strong>Jadavpur University, Kolkata, India</strong>
+                            <br/>
+                            <br/>
+                            Tech Stack / Technologies : <strong>
+                                Java , GIS data, HTML, Javascript, SQL
+
+                            </strong>
+
+
+                        </p>
+
+                    </div>
+                    <div class="col-5">
+                        <h4><u>Roles & Responsibilities</u></h4>
+                        <p>
+                        <dl>
+                            <dd>
+                                <ul>
+                                    <li>Development of a GIS based Design Making Support System for
+                                        Municipal Waste Disposal
+                                    </li>
+                                    <li>Implemented an efficient algorithm to determine
+                                        optimal path for waste disposal
+                                    </li>
+
+
+                                </ul>
+                            </dd>
+                        </dl>
+
+                        </p>
+
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <header class="major">
+                    <h2>Published Articles and Blogs</h2>
+                </header>
+
+
+                <div class="row">
+                    <div class="col-4">
+
+
+                        <article>
+                            <center>
+                                <span><img src="https://logo.clearbit.com/freshworks.com?size=70"></span>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <div class="content">
+
+                                    <h3>Freshworks Engineering Blog</h3>
+                                    <a target="_blank" href="https://www.freshworks.com/saas/eng-blogs/how-freshdesk-contact-center-enables-agents-to-collect-payments-over-the-phone-blog/"><strong>How Freshdesk Contact Center enables agents to collect payments
+                                        over the phone</strong><br/>
+                                    </a>
+
+                                </div>
+                            </center>
+                        </article>
+                    </div>
+                    <div class="col-4">
+
+
+                        <article>
+                            <center>
+                                <span><img src="https://logo.clearbit.com/baeldung.com?size=70"></span>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <div class="content">
+
+                                    <h3>Baeldung</h3>
+                                    <a target="_blank" href="https://www.baeldung.com/java-18-deprecate-finalization"><strong>Deprecate Finalization in Java 18</strong><br/>
+                                    </a>
+
+                                </div>
+                            </center>
+                        </article>
+                    </div>
+                    <div class="col-4">
+
+
+                        <article>
+                            <center>
+                                <span><img src="https://logo.clearbit.com/baeldung.com?size=70"></span>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <div class="content">
+
+                                    <h3>Baeldung</h3>
+                                    <a target="_blank" href="https://www.baeldung.com/java-21-string-templates"><strong>String Templates in Java 21</strong><br/>
+                                    </a>
+
+                                </div>
+                            </center>
+                        </article>
+                    </div>
+
+                </div>
+                <br/><br/>
+
+            </section>
+
+            <section>
+                <header id="skills" class="major">
+                    <h2>Technical Skill Set</h2>
+                </header>
+                <div class="row">
+
+                    <div class="col-6">
+                        <div class="box">
+                            <h4>Programming Languages</h4>
+                            <div class="row">
+                                <div class="col-3"><strong>Java</strong></div>
+                                <div class="col-9">
+                                    <div id="java2" class="java2"></div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-3"><strong>Ruby</strong></div>
+                                <div class="col-9">
+                                    <div id="ruby" class="ruby"></div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-3"><strong>Javascript</strong></div>
+                                <div class="col-9">
+                                    <div id="js" class="js"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-6">
+                        <div class="box">
+                            <h4>Backend Technologies</h4>
+                            <div class="row">
+                                <div class="col-3"><strong>Springboot</strong></div>
+                                <div class="col-9">
+                                    <div id="sb2" class="sb2"></div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-3"><strong>Mysql</strong></div>
+                                <div class="col-9">
+                                    <div id="sql" class="sql"></div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-3"><strong>Ruby on Rails</strong></div>
+                                <div class="col-9">
+                                    <div id="ror" class="ror"></div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <br/>
+                <div class="row">
+
+                    <div class="col-6">
+                        <div class="box">
+                            <h4>DevTools and Misc</h4>
+                            <div class="row">
+                                <div class="col-4">
+                                    <center><strong>AWS</strong></center>
+                                </div>
+                                <div class="col-4">
+                                    <center><strong>Git</strong></center>
+                                </div>
+                                <div class="col-4">
+                                    <center><strong>Docker</strong></center>
+                                </div>
+                            </div>
+                            <br/>
+                            <div class="row">
+                                <div class="col-4">
+                                    <center><strong>Redis</strong></center>
+                                </div>
+                                <div class="col-4">
+                                    <center><strong>REST</strong></center>
+                                </div>
+                                <div class="col-4">
+                                    <center><strong>UNIX Commands, bash scripting</strong></center>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-4">
+                                    <center><strong>Agile</strong></center>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="col-6">
+
+
+                    </div>
+            </section>
+            <section>
+                <center>
+                    <header class="major">
+                        <h2>Get in touch</h2>
+                    </header>
+                </center>
+                <div class="row">
+                    <div class="col-4">
+                    </div>
+                    <div class="col-4">
+                        <center>
+                            <ul class="contact">
+                                <li class="icon solid fa-envelope">bhaskarghosh16@icloud.com / dastidar.bhaskar@gmail.com</li>
+
+                                <li class="icon solid fa-phone">(+91) 9163407921</li>
+
+                            </ul>
+                        </center>
+                    </div>
+                    <div class="col-4">
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section
+                <section>
+                    <header class="major">
+                        <h2>Ipsum sed dolor</h2>
+                    </header>
+                    <div class="posts">
+                        <article>
+                            <a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
+                            <h3>Interdum aenean</h3>
+                            <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+                            <ul class="actions">
+                                <li><a href="#" class="button">More</a></li>
+                            </ul>
+                        </article>
+                        <article>
+                            <a href="#" class="image"><img src="images/pic02.jpg" alt="" /></a>
+                            <h3>Nulla amet dolore</h3>
+                            <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+                            <ul class="actions">
+                                <li><a href="#" class="button">More</a></li>
+                            </ul>
+                        </article>
+                        <article>
+                            <a href="#" class="image"><img src="images/pic03.jpg" alt="" /></a>
+                            <h3>Tempus ullamcorper</h3>
+                            <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+                            <ul class="actions">
+                                <li><a href="#" class="button">More</a></li>
+                            </ul>
+                        </article>
+                        <article>
+                            <a href="#" class="image"><img src="images/pic04.jpg" alt="" /></a>
+                            <h3>Sed etiam facilis</h3>
+                            <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+                            <ul class="actions">
+                                <li><a href="#" class="button">More</a></li>
+                            </ul>
+                        </article>
+                        <article>
+                            <a href="#" class="image"><img src="images/pic05.jpg" alt="" /></a>
+                            <h3>Feugiat lorem aenean</h3>
+                            <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+                            <ul class="actions">
+                                <li><a href="#" class="button">More</a></li>
+                            </ul>
+                        </article>
+                        <article>
+                            <a href="#" class="image"><img src="images/pic06.jpg" alt="" /></a>
+                            <h3>Amet varius aliquam</h3>
+                            <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+                            <ul class="actions">
+                                <li><a href="#" class="button">More</a></li>
+                            </ul>
+                        </article>
+                    </div>
+                </section>
+
+        </div>
+    </div> -->
+
+            <!-- Sidebar
+                <div id="sidebar">
+                    <div class="inner">
+
+
+                            <section id="search" class="alt">
+                                <form method="post" action="#">
+                                    <input type="text" name="query" id="query" placeholder="Search" />
+                                </form>
+                            </section>
+
+                            <nav id="menu">
+                                <header class="major">
+                                    <h2>Menu</h2>
+                                </header>
+                                <ul>
+                                    <li><a href="index.html">Homepage</a></li>
+                                    <li><a href="generic.html">Generic</a></li>
+                                    <li><a href="elements.html">Elements</a></li>
+                                    <li>
+                                        <span class="opener">Submenu</span>
+                                        <ul>
+                                            <li><a href="#">Lorem Dolor</a></li>
+                                            <li><a href="#">Ipsum Adipiscing</a></li>
+                                            <li><a href="#">Tempus Magna</a></li>
+                                            <li><a href="#">Feugiat Veroeros</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Etiam Dolore</a></li>
+                                    <li><a href="#">Adipiscing</a></li>
+                                    <li>
+                                        <span class="opener">Another Submenu</span>
+                                        <ul>
+                                            <li><a href="#">Lorem Dolor</a></li>
+                                            <li><a href="#">Ipsum Adipiscing</a></li>
+                                            <li><a href="#">Tempus Magna</a></li>
+                                            <li><a href="#">Feugiat Veroeros</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Maximus Erat</a></li>
+                                    <li><a href="#">Sapien Mauris</a></li>
+                                    <li><a href="#">Amet Lacinia</a></li>
+                                </ul>
+                            </nav>
+
+
+                            <section>
+                                <header class="major">
+                                    <h2>Ante interdum</h2>
+                                </header>
+                                <div class="mini-posts">
+                                    <article>
+                                        <a href="#" class="image"><img src="images/pic07.jpg" alt="" /></a>
+                                        <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
+                                    </article>
+                                    <article>
+                                        <a href="#" class="image"><img src="images/pic08.jpg" alt="" /></a>
+                                        <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
+                                    </article>
+                                    <article>
+                                        <a href="#" class="image"><img src="images/pic09.jpg" alt="" /></a>
+                                        <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
+                                    </article>
+                                </div>
+                                <ul class="actions">
+                                    <li><a href="#" class="button">More</a></li>
+                                </ul>
+                            </section>
+
+
+                            <section>
+                                <header class="major">
+                                    <h2>Get in touch</h2>
+                                </header>
+                                <p>Sed varius enim lorem ullamcorper dolore aliquam aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin sed aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+                                <ul class="contact">
+                                    <li class="icon solid fa-envelope"><a href="#">information@untitled.tld</a></li>
+                                    <li class="icon solid fa-phone">(000) 000-0000</li>
+                                    <li class="icon solid fa-home">1234 Somewhere Road #8254<br />
+                                    Nashville, TN 00000-0000</li>
+                                </ul>
+                            </section>
+
+
+
+                    </div>
+                </div>-->
+
+        </div>
+
+        <!-- Scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+
+</body>
 </html>
